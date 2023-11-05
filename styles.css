@@ -1,0 +1,19 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2cm; /* Adjust margins as needed */
+    line-height: 1.6; /* Adjust line height as needed */
+}
+
+.document {
+    padding: 2cm; /* Adjust padding as needed */
+}
+
+h1 {
+    font-size: 24px; /* Adjust font size as needed */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 12pt; /* Adjust font size as needed */
+    margin-bottom: 10px;
+}
