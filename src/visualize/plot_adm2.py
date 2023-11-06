@@ -167,7 +167,7 @@ for year in [2008,2020]:
              marker_kwds=dict(radius=5, fill=True),  # make marker radius 10px with fill
              tooltip="Well name",  # show "name" column in the tooltip
              tooltip_kwds=dict(labels=False),  # do not show column label in the tooltip
-             name="Drilling holess",  # name of the layer in the map
+             name="Drilling holes",  # name of the layer in the map
             ))
                 
     folium.TileLayer("CartoDB positron", show=False).add_to(mm)
