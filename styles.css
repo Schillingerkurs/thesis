@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
-    font-family: 'Computer Modern', Times, serif;
+    font-family: 'Roboto', sans-serif;
     margin: 2cm; /* Adjust margins as needed */
     line-height: 1.6; /* Adjust line height as needed */
 }
