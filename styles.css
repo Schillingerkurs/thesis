@@ -19,3 +19,18 @@ p {
     font-size: 12pt; /* Adjust font size as needed */
     margin-bottom: 10px;
 }
+
+.map-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.map {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .map {
+        width: 45%;
+    }
+}
