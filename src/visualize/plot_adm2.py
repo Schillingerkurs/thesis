@@ -140,7 +140,8 @@ for year in [2008,2020]:
                       k=10,  # use 10 bins
                        legend_kwds=dict(colorbar=False),  # do not use colorbar
                        name="District activities",  # name of the layer in the map
-                      )
+            
+                        )
                       
                       
     mm = (gas_fields
@@ -169,14 +170,16 @@ for year in [2008,2020]:
              name="Drilling holess",  # name of the layer in the map
             ))
                 
-    folium.TileLayer("CartoDB positron", show=False).add_to(mm)  # use folium to add alternative tiles
+    folium.TileLayer("CartoDB positron", show=False).add_to(mm)
+    # use folium to add alternative tiles
     folium.TileLayer(
         tiles = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
         attr = 'Esri',
         name = 'Esri Satellite',
         overlay = False,
         control = True
-       ).add_to(mm)
+        ).add_to(mm)
+    
     
  
     folium.LayerControl().add_to(mm)  # 
