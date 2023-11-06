@@ -169,14 +169,20 @@ for year in [2008,2020]:
              name="Drilling holess",  # name of the layer in the map
             ))
                 
-    folium.TileLayer("CartoDB positron", show=False).add_to(
-    mm
-    )  # use folium to add alternative tiles
+    folium.TileLayer("CartoDB positron", show=False).add_to(mm)  # use folium to add alternative tiles
+    folium.TileLayer(
+        tiles = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+        attr = 'Esri',
+        name = 'Esri Satellite',
+        overlay = False,
+        control = True
+       ).add_to(mm)
+    
+ 
     folium.LayerControl().add_to(mm)  # 
                     
     
-                    
-                
+                               
     mm.save(HERE/Path("assets",
                              "maps",
                             f"adm2_{year}.html"))
@@ -186,25 +192,8 @@ for year in [2008,2020]:
 
 
     
-                      
-#     groceries.explore(
-#     m=m,  # pass the map object
-#     color="red",  # use red color on all points
-#     marker_kwds=dict(radius=5, fill=True),  # make marker radius 10px with fill
-#     tooltip="Address",  # show "name" column in the tooltip
-#     tooltip_kwds=dict(labels=False),  # do not show column label in the tooltip
-#     name="groceries",  # name of the layer in the map
-# )              
-                      
+                    
     
-    
-    
-    
-    
-    
-#     .save(HERE/Path("assets",
-#                                                           "maps",
-#                                                           f"adm2_{year}.html"))
     
 
 
