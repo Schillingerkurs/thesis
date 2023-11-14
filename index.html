@@ -4,27 +4,34 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Thesis Data Companion</title>
         <link rel="stylesheet" href="styles.css">
+        <script defer src = "app.js"></script>
     </head>
     <body>
-        <section>
-            <h1>The mozambican gas bonanza and its economic effects</h1>
-            <p> 
-                Chapter One and Two in my dissertation examine business and politics ties on an individual level in Mozambique The following section provides an overview of the countries gas bonanza on a macro level. 
-                It presents the economic activity at the district level (adm2) in Mozambique in 2008, right before the discovery of the Windjammer gas field, and in 2020.
+        <h1>Why do Peps matter?</h1>
 
-                The figures also show the location of exploration drilling wheels (as recorded by the  <a href="https://www.inp.gov.mz/en">National Institute for Petroleum</a>) and actual giant or super giant as discoveries (as recorded in the <cite><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MEH5CS">Giant oil and gas field discoveries</a></cite> by Cust,Mihalyi and Rivera-Ballesteros) in Mozambique.
+             Defining Peps and fuzzy string matching might not sound like not the most exciting topic. But if we want to understand how links between politics and business shape the world we live in, we need understand how the sausage is made that allows one to study links political- and economic power on an individual level. 
+        <h2>Definition</h2>
+        <iframe src="text/peps_time_series.html" width="100%" height="600px"></iframe>
+
+        <img src="assets/pep_figures/barplot_pep_mandates.jpg" alt="Description of image" style="width: 100%; height: auto;">
+
+        <h2>Linking PEPs</h2>
+
+        <p> The next challenge is to define the link between PEPs and private companies. 
+            I use the <a href="https://www.portaldogoverno.gov.mz/por/Governo/Legislacao/Boletins-da-Republica">Boletim da Republica, Serie III (Bd3)</a> to identify the board members of private companies and associations. 
+            But names are not consistently spelled across every dataset. Middle names are often missing and the order of first and last names is not consistent.
+            Each chapter in my dissertation explains in details, how I link names across datasets. This section provides an overview how different data set match to each other and includes additional datasources 
+
+        <iframe src="assets/pep_figures/chord.html" width="100%" height="600px"></iframe>
+
+       
+
+        <iframe src="text/gas_bonanza.html" width="75%" height="600px"></iframe>
+        <section class = "hidden">
             
-                As compare of social and economic activity across districts, I use population density, Travel time to capital (h) (as recorded in the <cite><a href="https://www.carlmueller-crepon.org/project/statecap_data/"> State reach project</a></cite> by Müller-Crepon (which is available until 2017))
-                and number of registered private companies per year. I define the location of private companies based on their Headquarter location documented in the <a href="https://www.portaldogoverno.gov.mz/por/Governo/Legislacao/Boletins-da-Republica">Boletim da Republica, Serie III (Bd3)</a>
-                
-             <p>
-                Two trends are remarkable. First, substantial exploration activities where carried out all over Mozambique, which made it almost impossible to predict discovery of the Windjammer field in 2009. Second, the economic activities remains highly centralized in Maputo and the larger cities. Only a few companies registered their Headquarter in rual areas, not even nearby giant gas fields.
-                That does not mean there is no economic activities in rural areas, but most of them are either informal or registered in the capital.
-                
-                For instance, satellite images (the legend icon at top right corner of the map include the current Esri images ) show a major FDI project in the district of Palma, nearby the Areas 4 LNG. However, these project operate special legal status and relate very little to local economic activities. Tree private companies have their HQ in this district.
-
             <div class="map-container">
               
                 <iframe src="assets/maps/adm2_2008.html" width="45%" height="600px"></iframe>
@@ -33,13 +40,8 @@
 
         </section>
 
-    </section>
-            <h1>How many PEPs</h1>
-            <p>
-                PEPs, short for Politically Exposed Persons, are individuals who play significant roles in the government or public sector. Banks must identify PEP customers because they have a higher risk of being involved in bribery and corruption due to their positions. This knowledge helps banks follow anti-money laundering (AML) and counter-terrorist financing (CTF) regulations by implementing stricter due diligence measures. However, there's no universally accepted international definition of a PEP. The Financial Action Task Force on Money Laundering (FATF) defines them as people in high-ranking government positions or key political party members and their close relatives.
-            </p> 
-                In my dissertation's first and second chapters, I study the behavior of Mozambican PEPs in the private sector. This research raises the question of who should be included in such studies. Nowadays, various entities maintain databases of PEPs, so which one should you trust? How do these databases differ from each other? The following figure provides an overview of the available measures and offers a comparison.
-        </p> 
+    </section class = "hidden">
+           
 
 
     </section>
