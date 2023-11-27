@@ -45,3 +45,9 @@ iframe {
     height: auto;
     cursor: pointer;
 }
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
