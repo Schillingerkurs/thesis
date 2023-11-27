@@ -14,7 +14,7 @@
         {
             "label": "Git Commit",
             "type": "shell",
-            "command": "git add . && git commit -m \"Auto commit\"",
+            "command": "git add . && git commit -m \"Auto commit\" && git push",
             "problemMatcher": []
         },
         {
