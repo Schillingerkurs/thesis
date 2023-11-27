@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile Markdown",
+            "type": "shell",
+            "command": "for %f in (text\\*.md) do markdown-it %f -o pages\\%~nf.html",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Git Commit",
+            "type": "shell",
+            "command": "git add . && git commit -m \"Auto commit\"",
+            "problemMatcher": []
+        },
+        {
+            "label": "Run All Tasks",
+            "dependsOn": ["Compile Markdown", "Git Commit"],
+            "problemMatcher": []
+        }
+    ]
+}

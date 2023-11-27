@@ -63,9 +63,25 @@ def get_matrix_15(HERE)-> dict:
             lable_mapper.update(temp.set_index(temp.keys()[1])
                     .iloc[:, 1].to_dict())
     
+    
+    
+        
+    df = (pd
+          .read_csv(matrx_path/Path("sam15_categories.csv"),
+                     encoding = "ISO-8859-1",
+                    )
+           .dropna(how = "all")
+           .query("~Column1.str.contains('Column')")
+           .drop(columns = ['Column1', 'Unnamed: 7'])
+       )
+        
+    
+    
     out = {}
     out['labels'] = lable_mapper
-    out['matrix'] = item_tuples     
+    out['matrix'] = item_tuples 
+
+    out['sam15_categories'] = df
     
     return out
     
