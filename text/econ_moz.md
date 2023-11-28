@@ -21,13 +21,16 @@ Orbis, a business information database documents in detail the financial flows o
 
 ![sam_15.jpg](../assets/accounting_matrix/sam_15.jpg)
 
-![barh_orbis.jpg](../assets/orbis/_mz/barh_orbis.jpg)
+![barh_orbis.jpg](../assets/orbis_moz/barh_orbis.jpg)
 
 
 ## Trade and administrative data complement each other
 
-Let's take a look at the trade statistics. The figure below shows the trade flows of fertilizer in Mozambique. The figure shows that Mozambique imports.
-
+Let's take a look how trade statistics and administrative records can answer this question.
+The figure below shows the imports of fertilizer and numbers of annually registered companies that trade with fertilizer in Mozambique between 1985 and 2021. To determine whether a company operates in this business, I apply NLP for a sentiment analysis of a each companies mission statement. 
+ 
 ![fertilizer.jpg](../assets/baci_bdr/fertilizer.jpg)
+
+The figure shows that fertilizer imports skyrocketed in 2008, while the number of domestic companies that trade with fertilizer remained relatively stable before 2010. After 2010, the number of companies that trade with fertilizer increased, but the imports of fertilizer decreased to the initial import level.
 
 
