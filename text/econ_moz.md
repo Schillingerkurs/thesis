@@ -10,7 +10,9 @@
 
 To gain individual level insights into the Mozambican economy, I apply a a class-based TF-IDF procedure ([BERTtopic](https://arxiv.org/abs/2203.05794)) to cluster word embeddings from the mission statements in the BDR3, i.e. the same publication that I use in the first two chapters to observe the ownership structure of Mozambican firms. Below are two dimensional topic representations of the tree most common entry types registered in the BDR3. I auto-translated the mission statements from portugese to english before I applied the sentiment analysis. 
 
-<details open> 
+## Visual representation:
+
+<details> 
 <summary> Associations (associacao) </summary>
 <br>
  <iframe src= "../assets/bert_topics/intertopic_distance/associacao_topic.html" width="100%" height="900px"></iframe>
@@ -30,10 +32,28 @@ To gain individual level insights into the Mozambican economy, I apply a a class
 
 
 
-# Example: Social associations over time
+# Illustration 1: Sport and religious Social associations over time
 To illustrate how topic modeling provides unique insights into the mozambican society. Let's consider the question which type of social entities benefited from the rapid economic growth in Mozambique after 2009.
 
 <img class="markdown-image" src="../assets/bert_topics/football_christian_muslim.png" alt="football_christian_muslim.png">
+
+
+## Illustration 2: Fertilizer industry over time and space
+
+Let's take a look how trade statistics and administrative records can answer this question.
+The figure below shows the imports of fertilizer and numbers of annually registered companies that trade with fertilizer in Mozambique between 1985 and 2021. To determine whether a company operates in this business, I apply NLP for a sentiment analysis of a each companies mission statement. 
+ 
+
+<img class="markdown-image" src="../assets/baci_bdr/fertilizer.jpg" alt="fertilizer.jpg">
+
+The figure shows that fertilizer imports skyrocketed in 2008, while the number of domestic companies that trade with fertilizer remained relatively stable before 2010. After 2010, the number of companies that trade with fertilizer increased, but the imports of fertilizer decreased to the initial import level. 
+
+ We can now look at the location of the xxx firms that operate in total in the fertilizer business. The figure below shows the location of these firms in Mozambique. The figure shows that the majority of firms are located in the capital Maputo, but there are also firms in the north of the country.
+
+[insert map of fertilizer firms]
+
+[mention the failure of the Zambezi Valley project
+
 
 
 
@@ -60,21 +80,7 @@ o
 
 <img class="markdown-image" src="../assets/orbis_moz/barh_orbis.jpg" alt="barh_orbis.jpg">
 
-## Trade and administrative data complement each other
 
-Let's take a look how trade statistics and administrative records can answer this question.
-The figure below shows the imports of fertilizer and numbers of annually registered companies that trade with fertilizer in Mozambique between 1985 and 2021. To determine whether a company operates in this business, I apply NLP for a sentiment analysis of a each companies mission statement. 
- 
-
-<img class="markdown-image" src="../assets/baci_bdr/fertilizer.jpg" alt="fertilizer.jpg">
-
-The figure shows that fertilizer imports skyrocketed in 2008, while the number of domestic companies that trade with fertilizer remained relatively stable before 2010. After 2010, the number of companies that trade with fertilizer increased, but the imports of fertilizer decreased to the initial import level. 
-
- We can now look at the location of the xxx firms that operate in total in the fertilizer business. The figure below shows the location of these firms in Mozambique. The figure shows that the majority of firms are located in the capital Maputo, but there are also firms in the north of the country.
-
-[insert map of fertilizer firms]
-
-[mention the failure of the Zambezi Valley project
 
 
 
