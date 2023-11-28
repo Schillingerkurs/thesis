@@ -1,7 +1,8 @@
 
----
+
+<head>
 <link rel="stylesheet" href="styles.css"></link>
----
+</head>
 
 
 # Mapping the Mozambican economy
