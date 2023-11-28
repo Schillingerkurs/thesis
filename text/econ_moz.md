@@ -33,6 +33,18 @@ The figure below shows the imports of fertilizer and numbers of annually registe
 
 <img class="project-image" src="../assets/baci_bdr/fertilizer.jpg" alt="fertilizer.jpg">
 
-The figure shows that fertilizer imports skyrocketed in 2008, while the number of domestic companies that trade with fertilizer remained relatively stable before 2010. After 2010, the number of companies that trade with fertilizer increased, but the imports of fertilizer decreased to the initial import level.
+The figure shows that fertilizer imports skyrocketed in 2008, while the number of domestic companies that trade with fertilizer remained relatively stable before 2010. After 2010, the number of companies that trade with fertilizer increased, but the imports of fertilizer decreased to the initial import level. 
+
+ We can now look at the location of the xxx firms that operate in total in the fertilizer business. The figure below shows the location of these firms in Mozambique. The figure shows that the majority of firms are located in the capital Maputo, but there are also firms in the north of the country.
+
+[insert map of fertilizer firms]
+
+[mention the failure of the Zambezi Valley project
+
+
+## How does the sentiment analysis look like any why might existing industry codes be misleading?
+
+
+Overview of all topics. Example of the associate/faith example. 
 
 
