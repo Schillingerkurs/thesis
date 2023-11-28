@@ -13,7 +13,7 @@ To gain individual level insights into the Mozambican economy, I apply a a class
 <details open> 
 <summary> Associations (associacao) </summary>
 <br>
- <iframe src= "../assets/bert_topics/intertopic_distance/associacao_topic.html" width="95%" height="500px"></iframe>
+ <iframe src= "../assets/bert_topics/intertopic_distance/associacao_topic.html" width="100%" height="900px"></iframe>
 </details>
 
 <details> 
