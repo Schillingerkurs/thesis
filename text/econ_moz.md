@@ -33,8 +33,7 @@ To gain individual level insights into the Mozambican economy, I apply a a class
 # Example: Social associations over time
 To illustrate how topic modeling provides unique insights into the mozambican society. Let's consider the question which type of social entities benefited from the rapid economic growth in Mozambique after 2009.
 
-<img class="markdown-image" src="./assets/bert_topics/football_christian_muslim.png" alt="football_christian_muslim.png">
-
+<img class="markdown-image" src="../assets/bert_topics/football_christian_muslim.png" alt="football_christian_muslim.png">
 
 
 
