@@ -11,6 +11,7 @@ Every society needs data to study and plan the allocation of resource. Getting u
 
 Technologies like Natural Language Processing (NLP) and Large Language Models have enormous potential to solve this lack of useful data.
 
-This file contains a styles reference. And we test this Here.
+This file contains a styles reference. And we test this Here. Style not working.
 
 
+.
