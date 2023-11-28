@@ -10,22 +10,30 @@
 
 To gain individual level insights into the Mozambican economy, I apply a a class-based TF-IDF procedure ([BERTtopic](https://arxiv.org/abs/2203.05794)) to cluster word embeddings from the mission statements in the BDR3, i.e. the same publication that I use in the first two chapters to observe the ownership structure of Mozambican firms. Below are two dimensional topic representations of the tree most common entry types registered in the BDR3. I auto-translated the mission statements from portugese to english before I applied the sentiment analysis. 
 
-## Associations (associacao)
-<iframe src="../assets/bert_topics/intertopic_distance/associacao_topic.html"width="100%"height="600px">`</iframe>`
+<details open> 
+<summary> Associations (associacao) </summary>
+<br>
+ <iframe src= "../assets/bert_topics/intertopic_distance/associacao_topic.html" width="95%" height="500px"></iframe>
+</details>
 
-## Individual company (sociedade individual)
-<iframe src="../assets/bert_topics/intertopic_distance/sociedade_individual_topic.html"width="100%"height="600px">`</iframe>`
+<details> 
+<summary> Individual company (sociedade individual) </summary>
+<br>
+<iframe src="../assets/bert_topics/intertopic_distance/sociedade_individual_topic.html" width="100%" height="600px"></iframe>
+</details>
 
-## Private limited company (sociedade por quotas)
-<iframe src="../assets/bert_topics/intertopic_distance/sociedade_por_quotas_topic.html"width="100%"height="600px">`</iframe>`
+<details> 
+<summary> Private limited company (sociedade por quotas) </summary>
+<br>
+<iframe src="../assets/bert_topics/intertopic_distance/sociedade_por_quotas_topic.html" width="100%" height="600px"></iframe>
+</details>
 
 
 
 # Example: Social associations over time
-
 To illustrate how topic modeling provides unique insights into the mozambican society. Let's consider the question which type of social entities benefited from the rapid economic growth in Mozambique after 2009.
 
-
+<img class="markdown-image" src="./assets/bert_topics/football_christian_muslim.png" alt="football_christian_muslim.png">
 
 
 
