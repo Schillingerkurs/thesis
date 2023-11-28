@@ -20,10 +20,10 @@ With existing data, we could answer this question via the 2015 Social Accounting
 Orbis, a business information database documents in detail the financial flows of firms. However, the quality of Orbis data is very heterogeneous across countries. In Mozambique, Orbis documents around 14000 companies, but its not certain whether this sample provides a representative picture of the economy. The database documents NACE industry codes, for all firms in this sample but little additional information for the majority of entries. The horizontal bar plot displays the numbers of companies in each industry. The figure shows that the majority of firms are in the a"business service sector", but the definition of this sector classification  origins form industrialized countries.
 
 
-<img class="project-image" src="../assets/accounting_matrix/sam_15.jpg" alt="sam_15.jpg">
+<img class="markdown-image" src="../assets/accounting_matrix/sam_15.jpg" alt="sam_15.jpg">
 
 
-<img class="project-image" src="../assets/orbis_moz/barh_orbis.jpg" alt="barh_orbis.jpg">
+<img class="markdown-image" src="../assets/orbis_moz/barh_orbis.jpg" alt="barh_orbis.jpg">
 
 ## Trade and administrative data complement each other
 
@@ -31,7 +31,7 @@ Let's take a look how trade statistics and administrative records can answer thi
 The figure below shows the imports of fertilizer and numbers of annually registered companies that trade with fertilizer in Mozambique between 1985 and 2021. To determine whether a company operates in this business, I apply NLP for a sentiment analysis of a each companies mission statement. 
  
 
-<img class="project-image" src="../assets/baci_bdr/fertilizer.jpg" alt="fertilizer.jpg">
+<img class="markdown-image" src="../assets/baci_bdr/fertilizer.jpg" alt="fertilizer.jpg">
 
 The figure shows that fertilizer imports skyrocketed in 2008, while the number of domestic companies that trade with fertilizer remained relatively stable before 2010. After 2010, the number of companies that trade with fertilizer increased, but the imports of fertilizer decreased to the initial import level. 
 
