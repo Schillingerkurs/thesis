@@ -47,7 +47,7 @@ iframe {
 }
 
 .project img {
-    width: 100%;
+    width: 90%;
     height: auto; /* maintain aspect ratio */
     object-fit: cover; /* cover the entire width of the container while maintaining aspect ratio */
 }
