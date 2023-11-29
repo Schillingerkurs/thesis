@@ -14,7 +14,7 @@ from matplotlib.lines import Line2D
 HERE = Path(__file__).parent.parent.parent.absolute()
 import contextily as cx
 import matplotlib.pyplot as plt
-
+import numpy as np
 
 
 FLEXI = Path(r"C:\Users\fs.egb\mine_mapper_project")
@@ -36,11 +36,18 @@ def add_usgs_and_giants(current_iso, HERE):
                           .to_crs(3857)
                           .assign(iso3 = lambda x: x['FeatureUID'].str[:3])
                           .query('iso3 in @current_iso')
-                          .drop(columns = ['Latitude', 'Longitude'])
-                          .assign(type_ = "USGS Year book 2017/2018")
                           .rename(columns = {'FeatureNam':"mine_name"})
-                          .assign(type_ = 'mine')
-                          )
+                           [['mine_name', 'FeatureTyp',
+       'DsgAttr01', 'DsgAttr02', 'DsgAttr03','OperateNam',
+       'OwnerName1', 'OwnerName2', 'OwnerName3', 'OwnerName4',
+       'geometry']]
+                           .replace('<null>', np.nan)
+                           )
+    
+ugsg_facilities = ugsg_facilities.rename(columns={ x: x.replace("DsgAttr","Attribute_").replace("OwnerName","Owner_Name_")
+                                                  
+                                                  for x in ugsg_facilities.keys() })
+                          
     
     
     df = (pd
@@ -70,4 +77,5 @@ def add_usgs_and_giants(current_iso, HERE):
 
     
     return  
+
 
