@@ -9,3 +9,4 @@ To my knowledge, the only public database that covers PEP data over time is the 
 ![barplot_pep_mandates.jpg](../assets/pep_figures/barplot_pep_mandates.jpg)
 
 <iframe src="../assets/pep_figures/chord.html" width="100%" height="600px"></iframe>
+
