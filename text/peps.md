@@ -1,3 +1,9 @@
+
+<head>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+
 # Why do Peps matter?
 
 A Pep, short for Politically Exposed Persons, is an individuals who has an important role in the government or public sector. They lay an important role in the many regularities of the financial sector. Banks must identify PEP customers because they have a higher risk of being involved in bribery and corruption due to their positions. This knowledge helps banks follow anti-money laundering (AML) and counter-terrorist financing (CTF) regulations by implementing stricter due diligence measures.
