@@ -2,7 +2,15 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 
-# Sentiment Analysis of Mission Statements
+# Topic Modeling of Mission Statements
+
+Topic modeling is a natural language processing technique that identifies latent thematic patterns within unstructured text data, enabling the extraction of meaningful insights by categorizing documents into topics based on shared semantic content. This is in creadible useful for large amounts of unstructured text, such as the mission statements of entries in the national bulletin of Mozambique, the BDR3. 
+
+This enables us to oberserve not the ownership structure of firms, but also their mission statments. While I use in the first two capters of my dissertation keywords to identify the industies of firms, topic modelling provides sigifncanty deep insights.  The page provides an overview of this potential.
+
+For startets.
+
+
 
 To gain individual-level insights into the Mozambican economy, I apply a class-based TF-IDF procedure called [BERTtopic](https://arxiv.org/abs/2203.05794) to cluster word embeddings from the mission statements in the BDR3 (the same publication that the first two chapters of my dissertation leverage). Below are two-dimensional topic representations of the three most common entry types registered in the BDR3. I auto-translated the mission statements from Portuguese to English before applying the sentiment analysis.
 
@@ -26,7 +34,7 @@ To gain individual-level insights into the Mozambican economy, I apply a class-b
 <iframe src="../assets/bert_topics/intertopic_distance/sociedade_por_quotas_topic.html" width="100%" height="800px"></iframe>
 </details>
 
-# Formalization of Sport Clubs and Religious Communities 
+# Formalization of Sport Clubs and Religious Communities
 
 To illustrate how topic modeling unveils details about Mozambican society, consider the question of what kind of civil societies are present in Mozambique. For simplicity, let's assume we are considering sport-related clubs, as well as Christian or Muslim faith. The following graph plots the number of annually registered associations that mention one of these three topics in their mission statement. The figure shows two trends: an increase in the number of annually registered sports clubs and Christian communities over the last two decades. In contrast, the formalization (i.e., documentation in the public bulletin) of Muslim communities remains at a stable low level throughout the same period. The National Statistics Institute estimated that around 20% of Mozambican citizens are Muslims.
 
