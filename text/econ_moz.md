@@ -9,7 +9,7 @@
 
 To gain individual level insights into the Mozambican economy, I apply a class-based TF-IDF procedure called [BERTtopic](https://arxiv.org/abs/2203.05794) to cluster word embeddings from the mission statements in the BDR3 (i.e. the same publication that the first two chapters of my dissertation leverage). Below are two dimensional topic representations of the tree most common entry types registered in the BDR3. I auto-translated the mission statements from portugese to english before I applied the sentiment analysis. 
 
-### Visual representations (click on the arrows to view) :
+## Visual representations (click on the arrows to view) :
 
 <details> 
 <summary> Associations (associacao) </summary>
