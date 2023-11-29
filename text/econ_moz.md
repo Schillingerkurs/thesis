@@ -42,7 +42,7 @@ In contrast the formalization, i.e. documentation in the public bulletin, of mus
 
 ## Illustration 2: The supply chain if fertilizer over space and time
 
-If we link the sentiment of registered firms to national trade statics, we gain additional insights. In this example, we look import of fertilizer into Mozambique, as measured by the BACI trade dataset. BACI builds up on the United Nations Commodity Trade Statistics Database (UN Comtrade) and cross validated bilateral import and export statistics. The figure below plot with a linechart the imports of fertilizer. The bar chart lists the numbers of annually registered companies that trade or produce fertilizer according to their mission statement in Mozambique between 1985 and 2021.
+If we link the sentiment of registered firms to national trade statics, we gain additional insights. In this example, we look import of fertilizer into Mozambique, as measured by the BACI trade dataset. BACI builds up on the United Nations Commodity Trade Statistics Database (UN Comtrade) and cross validated bilateral import and export statistics. The figure below plot with a line chart the imports of fertilizer. The bar chart lists the numbers of annually registered companies that trade or produce fertilizer according to their mission statement in Mozambique between 1985 and 2021.
 
 
 The figure shows that fertilizer imports skyrocketed in 2008, while the number of domestic companies that trade with fertilizer remained relatively stable before 2010. After 2010, the number of companies that trade with fertilizer increased, but the imports of fertilizer decreased to the initial import level. 
