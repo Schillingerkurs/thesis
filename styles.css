@@ -3,9 +3,11 @@
 body {
     background-color: #ffffff;
     color: #131322;
-    font-family: 'Roboto', sans-serif; /* Updated font-family */
+    font-family: 'Roboto', sans-serif;
     padding: 0;
-    margin: 8em; /* Added margin */
+    margin: 8em;
+    max-width: 1200px; /* or any other value */
+    margin: 0 auto; /* centers the body if it's narrower than the viewport */
 }
 
 

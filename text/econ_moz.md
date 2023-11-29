@@ -1,15 +1,12 @@
-
 <head>
     <link rel="stylesheet" href="../styles.css">
 </head>
 
+# Sentiment Analysis of Mission Statements
 
+To gain individual-level insights into the Mozambican economy, I apply a class-based TF-IDF procedure called [BERTtopic](https://arxiv.org/abs/2203.05794) to cluster word embeddings from the mission statements in the BDR3 (the same publication that the first two chapters of my dissertation leverage). Below are two-dimensional topic representations of the three most common entry types registered in the BDR3. I auto-translated the mission statements from Portuguese to English before applying the sentiment analysis.
 
-# Sentiment analysis of the mission statements
-
-To gain individual level insights into the Mozambican economy, I apply a class-based TF-IDF procedure called [BERTtopic](https://arxiv.org/abs/2203.05794) to cluster word embeddings from the mission statements in the BDR3 (i.e. the same publication that the first two chapters of my dissertation leverage). Below are two dimensional topic representations of the tree most common entry types registered in the BDR3. I auto-translated the mission statements from portugese to english before I applied the sentiment analysis. 
-
-## Visual representations (click on the arrows to view) :
+## Visual Representations (click on the arrows to view):
 
 <details> 
 <summary> Associations (associacao) </summary>
@@ -18,46 +15,37 @@ To gain individual level insights into the Mozambican economy, I apply a class-b
 </details>
 
 <details> 
-<summary> Individual company (sociedade individual) </summary>
+<summary> Individual Company (sociedade individual) </summary>
 <br>
 <iframe src="../assets/bert_topics/intertopic_distance/sociedade_individual_topic.html" width="100%" height="800px"></iframe>
 </details>
 
 <details> 
-<summary> Private limited company (sociedade por quotas) </summary>
+<summary> Private Limited Company (sociedade por quotas) </summary>
 <br>
 <iframe src="../assets/bert_topics/intertopic_distance/sociedade_por_quotas_topic.html" width="100%" height="800px"></iframe>
 </details>
 
+# Formalization of Sport Clubs and Religious Communities 
 
-
-# Formalization of sport clubs and religious community 
-To illustrate how topic modeling unveils details about the mozambican society, consider the question what kind civil societies are present in the mozambican society. 
-For simplicity, lets assume we are sport related clubs, as well as christian or muslim faith. The following graph plots the number of annually registered associations that mention one of these tree topic in their mission statement. 
-The figure shows two trends. Did the number of annually registered sports clubs and christian communities increased over the last two decades. 
-In contrast the formalization, i.e. documentation in the public bulletin, of muslim communities remains a stable low level through out the same period. The National Statistics Institute estimated that around 20 of mozambican citizens are Muslims.
+To illustrate how topic modeling unveils details about Mozambican society, consider the question of what kind of civil societies are present in Mozambique. For simplicity, let's assume we are considering sport-related clubs, as well as Christian or Muslim faith. The following graph plots the number of annually registered associations that mention one of these three topics in their mission statement. The figure shows two trends: an increase in the number of annually registered sports clubs and Christian communities over the last two decades. In contrast, the formalization (i.e., documentation in the public bulletin) of Muslim communities remains at a stable low level throughout the same period. The National Statistics Institute estimated that around 20% of Mozambican citizens are Muslims.
 
 <img class="markdown-image" src="../assets/bert_topics/football_christian_muslim.png" alt="football_christian_muslim.png">
 
+# The Supply Chain of Fertilizer over Time
 
-# The supply chain if fertilizer over space and time
+If we link the sentiment of registered firms to national trade statistics, we gain additional insights. In this example, we look at the import of fertilizer into Mozambique, as measured by the BACI trade dataset. BACI builds upon the United Nations Commodity Trade Statistics Database (UN Comtrade) and cross-validates bilateral import and export statistics. The figure below plots the imports of fertilizer with a line chart. The histogram lists the numbers of annually registered companies that trade or produce fertilizer according to their mission statement in Mozambique between 1985 and 2021.
 
-If we link the sentiment of registered firms to national trade statics, we gain additional insights. In this example, we look import of fertilizer into Mozambique, as measured by the BACI trade dataset. BACI builds up on the United Nations Commodity Trade Statistics Database (UN Comtrade) and cross validated bilateral import and export statistics. The figure below plot with a line chart the imports of fertilizer. The histogram lists the numbers of annually registered companies that trade or produce fertilizer according to their mission statement in Mozambique between 1985 and 2021.
+The figure shows that fertilizer imports skyrocketed in 2008, while the number of domestic companies that trade with fertilizer remained relatively stable before 2010. After 2010, the number of companies that trade with fertilizer increased, but the imports of fertilizer decreased to the initial import level.
 
-
-The figure shows that fertilizer imports skyrocketed in 2008, while the number of domestic companies that trade with fertilizer remained relatively stable before 2010. After 2010, the number of companies that trade with fertilizer increased, but the imports of fertilizer decreased to the initial import level. 
- 
 <img class="markdown-image" src="../assets/baci_bdr/fertilizer.jpg" alt="fertilizer.jpg">
 
+# Text Processing Can Build Better Macroeconomic Models
 
-
-#  Text processing can build better macro economic models
-
-Sentiment analysis of the bulletin provides not only micro level insights, it also allows to build better macro economic models. The, to my knowledge best existing measure of social activities in the Mozambican economy. The Social Accounting Matrix (SAM) of Mozambique, composed by the United Nations University World Institute for Development Economics Research (UNU-WIDER). The SAm is a static macro overview that provides a detailed representation of the Mozambican economy and separates 55 activities and commodities in 2015 and uses both data from the IMF as well as national accounts to estimate financial flows between different social and economic activities. The network graph of the SAM 2015, i.e. the most recent version has the following shape:
+Sentiment analysis of the bulletin provides not only micro-level insights but also allows us to build better macroeconomic models. The best existing measure of social activities in the Mozambican economy, to my knowledge, is the Social Accounting Matrix (SAM) of Mozambique. The SAM is composed by the United Nations University World Institute for Development Economics Research (UNU-WIDER). It is a static macro overview that provides a detailed representation of the Mozambican economy and separates 55 activities and commodities in 2015. It uses data from the IMF as well as national accounts to estimate financial flows between different social and economic activities. The network graph of the SAM 2015, the most recent version, has the following shape:
 
 <img class="markdown-image" src="../assets/accounting_matrix/sam_15.jpg" alt="sam_15.jpg">
 
-To study this economy on a firm, we can also consider Orbis, a corporate business intelligence database. The quality of orbis data is very heterogenous across countries. For Mozambique, the database lists around 15000 operating entities. The bar chart desegregates these companies by sector. 
-
+To study this economy on a firm level, we can also consider Orbis, a corporate business intelligence database. The quality of Orbis data is very heterogeneous across countries. For Mozambique, the database lists around 15,000 operating entities. The bar chart segregates these companies by sector.
 
 <img class="markdown-image" src="../assets/orbis_moz/barh_orbis.jpg" alt="barh_orbis.jpg">
