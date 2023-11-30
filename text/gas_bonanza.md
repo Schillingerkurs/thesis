@@ -2,7 +2,16 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 
-# The Mozambican Gas Bonanza and Its Economic Effects
+
+
+# How predictable  was the Mozambican Gas Bonanza?
+
+
+A lot of economic research uses the discovery of large oil or gas depositions 
+
+
+
+
 This section provides compares the economic activity across Mozambique over time. The left map plots the exploration wheels, discovered gas fields and registered companies
 at the district level (adm2)  in 2008, prior to the discovery of the Windjammer gas field. 
 The figures also show the location of exploration drilling wells, as documented by the [National Institute for Petroleum](https://www.inp.gov.mz/en), and actual giant or super giant discoveries [by Cust, Mihalyi, and Rivera-Ballesteros](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MEH5CS). The location of private companies is defined based on their headquarters location documented in the Boletim da Republica, Serie III (Bd3).
