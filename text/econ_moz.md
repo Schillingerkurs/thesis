@@ -2,26 +2,37 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 
-# Topic Modeling of Mission Statements
+# Topic Modeling provides novel insights.
 
-Topic modeling is a natural language processing technique that identifies latent thematic patterns within unstructured text data, enabling the extraction of meaningful insights by categorizing documents into topics based on shared semantic content. This is in creadible useful for large amounts of unstructured text, such as the mission statements of entries in the national bulletin of Mozambique, the BDR3. 
+Topic modeling has great potential to gain insights from large amounts of unstructured text, such as the mission statements of entries in the national bulletin of Mozambique, the BDR3. It is a natural language processing technique that identifies latent thematic patterns within unstructured text data, enabling the extraction of meaningful insights by categorizing documents into topics based on shared semantic content.
 
-This enables us to oberserve not the ownership structure of firms, but also their mission statments. While I use in the first two capters of my dissertation keywords to identify the industies of firms, topic modelling provides sigifncanty deep insights.  The page provides an overview of this potential.
+To demonstrate this potential lets' say we are interested in the formalization of sport clubs and religious communities in Mozambique over time. The following time sries shows the number of annually registered associations in the BDR3 that mention one of these three topics in their mission statement.
 
-For startets.
+The plot shows two trends: First  the number of annually registered sports clubs and christian communities increased over the last two decades. In contrast, remains the formalization of muslim faith communities at  lower level throughout the same period. The National Statistics Institute estimated that around 20% of Mozambican citizens are Muslims, suggesting that a large disparities in terms of institutionalized among the coutnries religous communities. This helps to understand the underlying social dynmaics of the ongoing islamist insurgency in northern Mozambique [(more information)](https://www.crisisgroup.org/africa/east-and-southern-africa/mozambique).
 
+<img class="markdown-image" src="../assets/bert_topics/football_christian_muslim.png" alt="football_christian_muslim.png">
 
+## How Topic Modelling works
 
-To gain individual-level insights into the Mozambican economy, I apply a class-based TF-IDF procedure called [BERTtopic](https://arxiv.org/abs/2203.05794) to cluster word embeddings from the mission statements in the BDR3 (the same publication that the first two chapters of my dissertation leverage). Below are two-dimensional topic representations of the three most common entry types registered in the BDR3. I auto-translated the mission statements from Portuguese to English before applying the sentiment analysis.
+The beatuy of Topic modeling is that I do not have to make any presumptions which topics are relevant in the data. If I use keywords to classify the topics in the BDR3 entries, I'll ingore any information that is not capture by the keywords I select. In contrast does the unsupervised ML algorithm that I use here structure the text corpus as whole - which allows to oberserve all information at once glace.  
 
-## Visual Representations (click on the arrows to view):
+Expalining all details of this approach is beyond the scope of this overview. If you want learn more about the algorithm us , i recommand the excellent  documentation of [BERTtopic](https://arxiv.org/abs/2203.05794), the class-based TF-IDF procedure called to cluster word embeddings. At a very high level this pipeline consists of 6 sequential steps:
 
-<details> 
-<summary> Associations (associacao) </summary>
-<br>
+1. Auto-translation of the mission statements from Portuguese to English.
+2. Embedding documents.
+3. Reducing embeddings in dimensionality.
+4. Cluster embeddings.
+5. Tokenize documents per cluster.
+6. Extract the best representing of words per topic by weighting them (tf-idf)
+
+It would  communally not really feasible cluster all mission statements directly with a Large Language Model (LLM). However, suitable extension to this pipeline would be to use an LLM to summarize and describe each topic representation.
+
+We can visualize the distance between topics in a two dimensional representation. This shows differences and similarities among the word vectors that represent the mission statements in the BD3. The following interactive figure 
+shows the topics of the mission statements of  associations (associacao) that I use in the time series above to to compare the formalization of sports clubs and religious communities over time. 
+
  <iframe src= "../assets/bert_topics/intertopic_distance/associacao_topic.html" width="100%" height="800px"></iframe>
-</details>
 
+You can click on the  headlines  below to view the 2-D topic distance representation of businesses that te registered in the BD3.
 <details> 
 <summary> Individual Company (sociedade individual) </summary>
 <br>
@@ -34,13 +45,9 @@ To gain individual-level insights into the Mozambican economy, I apply a class-b
 <iframe src="../assets/bert_topics/intertopic_distance/sociedade_por_quotas_topic.html" width="100%" height="800px"></iframe>
 </details>
 
-# Formalization of Sport Clubs and Religious Communities
+---
 
-To illustrate how topic modeling unveils details about Mozambican society, consider the question of what kind of civil societies are present in Mozambique. For simplicity, let's assume we are considering sport-related clubs, as well as Christian or Muslim faith. The following graph plots the number of annually registered associations that mention one of these three topics in their mission statement. The figure shows two trends: an increase in the number of annually registered sports clubs and Christian communities over the last two decades. In contrast, the formalization (i.e., documentation in the public bulletin) of Muslim communities remains at a stable low level throughout the same period. The National Statistics Institute estimated that around 20% of Mozambican citizens are Muslims.
-
-<img class="markdown-image" src="../assets/bert_topics/football_christian_muslim.png" alt="football_christian_muslim.png">
-
-# The Supply Chain of Fertilizer over Time
+# Supplementing topic modelling with trade data
 
 If we link the sentiment of registered firms to national trade statistics, we gain additional insights. In this example, we look at the import of fertilizer into Mozambique, as measured by the BACI trade dataset. BACI builds upon the United Nations Commodity Trade Statistics Database (UN Comtrade) and cross-validates bilateral import and export statistics. The figure below plots the imports of fertilizer with a line chart. The histogram lists the numbers of annually registered companies that trade or produce fertilizer according to their mission statement in Mozambique between 1985 and 2021.
 
@@ -48,7 +55,9 @@ The figure shows that fertilizer imports skyrocketed in 2008, while the number o
 
 <img class="markdown-image" src="../assets/baci_bdr/fertilizer.jpg" alt="fertilizer.jpg">
 
-# Text Processing Can Build Better Macroeconomic Models
+---
+
+# Improving Macroeconomic Models
 
 Sentiment analysis of the bulletin provides not only micro-level insights but also allows us to build better macroeconomic models. The best existing measure of social activities in the Mozambican economy, to my knowledge, is the Social Accounting Matrix (SAM) of Mozambique. The SAM is composed by the United Nations University World Institute for Development Economics Research (UNU-WIDER). It is a static macro overview that provides a detailed representation of the Mozambican economy and separates 55 activities and commodities in 2015. It uses data from the IMF as well as national accounts to estimate financial flows between different social and economic activities. The network graph of the SAM 2015, the most recent version, has the following shape:
 
