@@ -6,10 +6,9 @@
 
 Topic modeling is increadible useful to conduct research on economies with little administrative capacity. This page outlines the great potential to gain novel insights from large amounts of unstructured text, such as the mission statements of entries in the national bulletin of Mozambique, the BDR3 that analyse in my dissertation. Topic modeling is a natural language processing technique that identifies latent thematic patterns within unstructured text data, enabling the extraction of meaningful insights by categorizing documents into topics based on shared semantic content.
 
-To demonstrate how this is useful lets' say we are interested in the formalization of sport clubs and religious communities in Mozambique over time. Needless to say, the public authorities in Mozambique to not publish such statistics. The only thing that is aviable are the entries of the BDR3 which contains mission statments for every company or association that get formalized with a publication in the bulletin. 
+To demonstrate how this is useful lets' say we are interested in the formalization of sport clubs and religious communities in Mozambique over time. Needless to say, the public authorities in Mozambique to not publish such statistics. The only thing that is aviable are the entries of the BDR3 which contains mission statments for every company or association that get formalized with a publication in the bulletin.
 
 The time series below shows the number of annually registered associations in the BDR3 that mention one of these three topics in their mission statement. The plot shows on an individual level two trends: First  the number of annually registered sports clubs and christian communities increased over the last two decades. In contrast, remains the formalization of muslim faith communities at  lower level throughout the same period. The National Statistics Institute estimated that around 20% of Mozambican citizens are Muslims, suggesting that a large disparities in terms of institutionalized among the coutnries religous communities. This helps to understand the underlying social dynmaics of the ongoing islamist insurgency in northern Mozambique [(more information)](https://www.crisisgroup.org/africa/east-and-southern-africa/mozambique). As next step, we could identify the board members of each association or geocode their headquarters.
-
 
 <img class="markdown-image" src="../assets/bert_topics/football_christian_muslim.png" alt="football_christian_muslim.png">
 
@@ -49,7 +48,7 @@ You can click on the  headlines  below to view the 2-D topic distance representa
 
 ---
 
-# Supplementing topic modelling with trade data
+# Supplementing Topic Modelling with Trade Data
 
 If we link the sentiment of registered firms to national trade statistics, we gain additional insights. In this example, we look at the import of fertilizer into Mozambique, as measured by the BACI trade dataset. BACI builds upon the United Nations Commodity Trade Statistics Database (UN Comtrade) and cross-validates bilateral import and export statistics. The figure below plots the imports of fertilizer with a line chart. The histogram lists the numbers of annually registered companies that trade or produce fertilizer according to their mission statement in Mozambique between 1985 and 2021.
 
