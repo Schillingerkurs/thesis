@@ -10,7 +10,7 @@ However, despite the importance of PEPs, there is no universally accepted intern
 
 To my knowledge, the only public database that covers PEP data over time is the [Who Governs dataset](https://politicscentre.nuffield.ox.ac.uk/whogov-dataset/%22) by Jacob Nyrup and Stuart Bramwell, who parsed the annual CIA Yearbook to identify PEPs over time. To compare and validate this data, I compare the mandates of the Who Governs data with the ones I identified in the news archives. In the figure below:
 
-![barplot_pep_mandates.jpg](../assets/pep_figures/barplot_pep_mandates.jpg)
+<img class="markdown-image" src="../assets/pep_figures/barplot_pep_mandates.jpg" alt="barplot_pep_mandates.jpg">
 
 <iframe src="../assets/pep_figures/chord.html" width="100%" height="600px"></iframe>
 
