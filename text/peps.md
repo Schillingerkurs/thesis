@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
 # Mapping PEPs over time
 
 A PEP, which stands for Politically Exposed Person, is an individual who holds an important role in the government or public sector. They play a significant role in the regulations of the financial sector. Banks are required to identify PEP customers because they have a higher risk of being involved in bribery and corruption due to their positions. This knowledge helps banks comply with anti-money laundering (AML) and counter-terrorist financing (CTF) regulations by implementing stricter due diligence measures.
