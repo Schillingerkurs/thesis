@@ -2,6 +2,8 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 
+<a href="../index.html" class="button">Back to Main Page</a>
+
 # Topic Modeling
 
 Topic modeling is increadible useful to conduct research on economies with little administrative capacity. This page outlines the great potential to gain novel insights from large amounts of unstructured text, such as the mission statements of entries in the national bulletin of Mozambique, the BDR3 that analyse in my dissertation. Topic modeling is a natural language processing technique that identifies latent thematic patterns within unstructured text data, enabling the extraction of meaningful insights by categorizing documents into topics based on shared semantic content.
